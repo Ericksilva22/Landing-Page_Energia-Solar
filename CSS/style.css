@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', sans-serif;
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0; 
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+div img {
+    display: block;
+    width: 100%;
+}
+
+.painel {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.somos {
+    margin-left: -10%;
+}
+
+
+
+.flex-container {
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+    
+}
+
+header {
+    background-color: #121A57;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+header .list-items {
+    display: flex;
+    width: 100%;
+    max-width: 260px;
+    justify-content: space-between;
+}
+
+.list-items li a {
+    color: #fff;
+}
+
+header .menu {
+    justify-content: space-between;
+}
+
+.apresentation {
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentation .text-apresentation {
+    min-height: 200px;
+}
+
+.text-apresentation h1{
+    color: #121A57;
+    font-size: 48px;
+    margin-bottom: 10px;
+
+}
+
+.btn {
+    background-color: #121A57;
+    color: #fff;
+    display: block;
+    text-align: center;
+    width: 220px;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#botao-orçamento{
+    padding-left: 40%;
+    padding-top: 2%;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+    transition: all 300ms ease-in-out;
+}
+
+#quem-somos {
+    flex-direction:row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quem-somos h2 {
+    font-size: 32px;
+    color: #121A57;
+    display: flex;
+}
+
+#quem-somos h2::before {
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #121A57;
+    position: relative;
+}
+
+#quem-somos p {
+    margin-bottom: 10px;
+    width:90%;
+}
+
+#quem-somos img {
+    min-width: 420px;
+}
+
+.container-externo {
+    background-color: #121A57;
+    width: 100%;
+}
+
+#services {
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+#services h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.list-services {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-services .item-services {
+    text-align: center;
+}
+
+.item-services a{
+    width: 120px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 50px;
+    padding: 5px 10px;
+    color: #121A57;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.item-services a:hover {
+    background-color: #e65c00;
+    color: #fff;
+    transition: all 300ms ease-in-out;
+}
+
+.item-services p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.item-services img {
+    width: 90%;
+    margin: auto;
+    background-color: #e65c00;
+}
+
+
+#planos {
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+#titulo-orçamento h2 {
+    font-size: 32px;
+    margin-bottom: 10%;
+   
+}
+
+fieldset{
+    border: 0;
+}
+
+#orçamento{
+    margin-top: 2%;
+    color: #e65c00;
+}
+
+#formulario {
+    margin-top: 7%;
+    margin-left: -13%;
+}
+
+.campo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"] {
+    padding-right: 20em;
+    padding-bottom: 2em; 
+    border: 1.4px solid #121A57; 
+    border-radius: 6px;
+}
+
+textarea {
+    border-radius: 6px;
+    border: 1.4px solid #121A57; 
+}
+
+button {
+    display: block;
+    width: 120%;
+}
+
+footer {
+    background-color: #121A57;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+footer .rodape {
+    justify-content: space-between;
+    color: #fff;
+}
+
+/* Responsividade */
+
+@media(max-width: 992px) {
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .apresentation {
+        flex-direction: column-reverse;
+    }
+
+    .apresentation .text-apresentation {
+        width: 100%;
+    }
+
+    #quem-somos {
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos img {
+        min-width: 320px;
+        margin: auto;
+    }
+
+
+    .list-services {
+        flex-direction: column;
+    }
+
+    .item-services img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .list-planos {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .list-planos .item-plano {
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
